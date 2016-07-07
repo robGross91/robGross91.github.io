@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+	
+	<head>
+		<link rel="stylesheet" type="text/css" href="fireBreak.css">
+		<title> Rules </title>
+	</head>
+	
+<body>
+	<div id="header_container">
+			<div id="header">
+				FireBreak
+			</div>
+	</div>
+		
+	<div id="nav_container">
+		<ul>
+			<li><a href="home.html">Home</a></li>
+			<li><a href="game.html">Play!</a></li>
+			<li><a href="rules.html">Rules</a></li>
+			<li><a href="theme.html">Theme</a></li>
+			<li><a href="contact.html">Contact Information and References</a></li>
+	</ul>
+	</div>
+	
+	
+	<div id="content_area" style="left:90px; top:120px;">
+	<h2> How to play FireBreak </h2> <br>
+	<p>In FireBreak, your objective is to protect houses from being consumed by a spreading fire for as long as possible.
+	You do this by purchasing and placing firemen around the map in order to protect certain areas. <br>
+	Cash is accumulated automatically at a rate of 2/second and a fireman costs 1 cash. If the player loses 4 of the 6 houses, the game is over
+	and their score (the number of seconds they survived) is displayed.
+	The whole game is controlled by first left clicking on which orientation of fireman you would like to select and then
+	left clicking which grid space you would like to place the unit.</p>
+	<img src="rules1.jpg" alt="Units" style="top: -230px;  position: relative; float: right; right: 15%;margin:5px; width:200px;">
+	<br><br>
+	<h2> The Firemen </h2> <br>
+	<p> The firemen cover a 2x3 area in water relative to their orientation as shown to the right, each of these spaces has a probability of extinguishing
+	any fire contained in each square every second. However it is important to note that water-covered areas are not less-likely to
+	being ignited and as such firemen must be placed in anticipation of the fire spreading. </p>
+	<img src="rules2.jpg" alt="Water-coverage" style="top: -150px;  position: relative; float: right; right:5%;">
+	<br><br>
+	<h2> The Fire </h2> <br>
+	<p> The fire spreads every 5 seconds (indicated by a timer on the right), each non-ignited square adjacent to at least one ignited square
+	has a chance to ignite relative to the number of adjacent ignited squares. The player must decide whether they would rather focus their resources on completely
+	dousing one area to prevent further spreading or attempt to maintain control over the whole play area. </p>
+	
+	</div>
+	
+	<div id="footer_container">
+		<div id="footer"> 
+		<script>
+			function myFunction() {
+				var x = document.lastModified;
+				var text = document.createTextNode("Created by Robert Gross. Last modified " + x);
+				var node = document.getElementById("footer");
+				node.appendChild(text);
+			}
+			myFunction();
+		</script>
+		</div>
+	</div>
+
+</body>
